@@ -1,3 +1,3 @@
-# Homepage
-Test 1
-branch: homepage 
+# Test
+branch: test  
+Used for theme demo
