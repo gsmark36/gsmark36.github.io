@@ -1,4 +1,5 @@
 # Personal Website Repository
 ## Branch structure
-- `main` Index  
-- `homepage` Personal homepage  
+- `main` Infomation  
+- `homepage` Personal homepage
+- `test`  Theme & content test
