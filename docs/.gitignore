@@ -1,3 +1,8 @@
 _site
 .sass-cache
-bourbon
+.jekyll-cache
+.jekyll-metadata
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Gemfile.lock
