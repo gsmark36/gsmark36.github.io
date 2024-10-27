@@ -1,8 +1,8 @@
 @import "vars";
+@import "typography";
+@import "tables";
 
-/*
- * Basic Inconsolata
- */
+// Basic
 
 html {
     height: 100%;
@@ -10,9 +10,9 @@ html {
     padding: 0;
 }
 body {
-    margin: 0;
-    font-family: "monospace";
-    height: 100%;
+    background-color: $background;
+    font-family: "Ubuntu Mono";
+    font-weight: 400;
 }
 a {
     text-decoration: none;
@@ -24,17 +24,15 @@ a:hover {
 hr {
     border: 0;
     height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid #acacacb0;//rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
-/*
- * Navbar
- */
+// Navbar
 
 #author-name {
     font-size: 30px;
-    color: #272727;
+    color: $text-color;
     display: inline-block;
 }
 .navbar {
@@ -62,7 +60,7 @@ hr {
     float: right;
 }
 
-/* Divs */
+// Divs
 
 .container {
     max-width: $max-width;
@@ -72,16 +70,7 @@ hr {
     min-height: 100%;
 }
 
-/* Institute Image */
-
-#ins-logo {
-	margin: auto;
-	display: block;
-	max-height: 100px;
-	text-align: center;
-}
-
-/* Mobile */
+// Mobile
 
 @media (max-width: 800px) {
     .container {
@@ -126,6 +115,3 @@ hr {
 		margin: 0;
 	}
 }
-
-@import "typography";
-@import "tables";
