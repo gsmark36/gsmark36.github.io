@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll! Let's try this new feature how long this can show in one page"
-date:   2024-8-20 18:18:27 +0800
-categories: jekyll update
+date:   2024-8-20
 ---
 # title 1
 
