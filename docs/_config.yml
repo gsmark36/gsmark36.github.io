@@ -3,13 +3,17 @@ title: Researcher
 #baseurl: "/researcher"
 
 markdown: kramdown
-#ins_logo: "./bits-logo.png"
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  toc_levels: 1..6
+  auto_ids: true
 
 tracking_id: #
 
 footer: yes
-footer_url: "https://github.com/ankitsultana"
-footer_text: "Page design by Ankit Sultana"
+footer_text: "Page design by Haolong"
 
 sass:
     style: compressed

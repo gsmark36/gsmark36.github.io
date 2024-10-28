@@ -1,0 +1,31 @@
+
+<div class="toc">
+    <h2 style="font-size: 18px; color: #272727e7; font-size: 20px;">Table of contents</h2>
+    {% capture toc_content %}
+    <ul>
+        {% assign toc_flag = false %}
+        {% assign headings = page.content | split: '<h' %}
+        {% for heading in headings %}
+            {% if heading contains '>' %}
+                {% assign heading_parts = heading | split: '>' %}
+                {% assign heading_level = heading_parts[0] | slice: 0, 1 %}
+                {% assign heading_title = heading_parts[1] | strip %}
+                {% assign heading_id = heading_title | slugify: 'default' | replace: '-h1', '' | replace: '-h2', '' | replace: '-h3', '' %}
+                {% unless heading contains '<hr' or heading_title == '' or heading_title == ' ' %}
+                    {% if heading_level == '1' or heading_level == '2' or heading_level == '3' %}
+                        {% assign toc_flag = true %}
+                        <li class="toc-item toc-level-{{ heading_level }}">
+                            <a href="#{{ heading_id }}">{{ heading_title }}</a>
+                            <a href="#{{ heading_id }}"></a>
+                        </li>
+                    {% endif %}
+                {% endunless %}
+            {% endif %}
+        {% endfor %}
+        {% if toc_flag == false %}
+            <p style="font-size: 18px; color: #272727e7; font-size: 20px;">N/A</p>
+        {% endif %}
+    </ul>
+    {% endcapture %}
+    {{ toc_content }}
+</div>

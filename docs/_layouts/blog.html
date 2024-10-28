@@ -43,7 +43,18 @@
 
         <!-- 页面内容 -->
         <div class="container content">
-            {{ content }}
+            <h2>Posts</h2>
+            <hr style="height:10px; border:none;"> <!-- 标题正文分隔线 -->
+            <ul>
+                {% for post in site.posts %}
+                <li style="display: flex; align-items: flex-start; margin-bottom: 30px; margin-left: -18px;">
+                    <small style="font-size: 16px; color: #272727de; margin-right: 70px; white-space: nowrap;">{{ post.date | date: "%d %b %Y" }}</small>
+                    <a href="{{ post.url }}" style="font-size: 17px; color: #009e4a; text-decoration: underline; display: block; text-align: left;">
+                        {{ post.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
         <hr style="height:40px; border:none;">
 

@@ -1,6 +1,7 @@
 @import "vars";
 
 .content {
+    flex: 1;
     color: $text-color;
     line-height: 1.2;
     a:hover {
