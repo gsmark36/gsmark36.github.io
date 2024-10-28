@@ -1,8 +1,9 @@
 ---
 layout: default
-is_contact: true
+title: Contact | Haolong Wang
 ---
 
+# Contact
 * Email: [foo@xyz.com](mailto:foo@xyz.com)
 
 * Phone: [+91-123123](tel:+91-123123)
@@ -11,11 +12,10 @@ is_contact: true
 
 ## Mailing Address
 
-> 221B, Baker Street
->
-> London
->
-> United Kingdom
+> 221B, Baker Street  
+> London  
+> 
+> United Kingdom  
 
 ---
 

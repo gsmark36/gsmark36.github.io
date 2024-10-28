@@ -10,8 +10,8 @@
     
     <!-- 字体和CSS -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-    <link rel="icon" href="icon3.png">
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <link rel="icon" href="{{ site.url }}/assets/block-icon.png">
 </head>
 
 <body>
@@ -19,9 +19,9 @@
         <!-- 导航栏 -->
         <div class="navbar container">
             <div id="icon" class="alignable pull-left" style="margin-right: 10px;">
-                <img src="icon5.png" alt="icon" style="width: 90px; height: 90px; margin-top: -15px;">
+                <img src="{{ site.url }}/assets/plant.png" alt="icon" style="width: 90px; height: 90px; margin-top: -15px; opacity: 0.80;">
             </div>
-            <a id="author-name" class="alignable pull-left" href="{{ site.url }}{{ site.baseurl }}">
+            <a id="author-name" class="alignable pull-left" href="{{ site.url }}">
                 {{ site.title }}
             </a>
             <ul id="navlist" class="alignable pull-right navbar-ul">
