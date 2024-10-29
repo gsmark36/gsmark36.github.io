@@ -1,4 +1,4 @@
-# Researcher
+# Jekyll Theme Template
 
 ### [Demo Page](http://gsmark36.github.io)
 
