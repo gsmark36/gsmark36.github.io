@@ -1,60 +1,46 @@
 # Researcher
 
-### [Demo Website](http://ankitsultana.com/researcher)
+### [Demo Page](http://gsmark36.github.io)
 
-A clean, single column, monospace resume template built for jekyll
+This is a jekyll theme template based personal website template based on **Researcher** and **Cactus**. You can find them on GitHub. 
 
-### Installation
+- [Researcher](https://github.com/bk2dcradle/researcher)  
+- [Cactus](https://github.com/chrismwilliams/astro-theme-cactus)  
 
-Simply fork the repository and edit away.
+### Directory
 
-#### Installation via remote themes
+```
+.
+├── _includes       # Components loaded in layout templates
+├── _layouts        # Layout templates
+├── _posts          # Blog post articles
+├── _sass           # SASS files
+├── assets          # Media assets
+├── css             # CSS files
+├── _config.yml       # Jekyll configuration file (Important!)
+├── 404.md            # 404 page
+├── blog.md           # Blog page
+├── contact.md        # Contact details
+└── index.md          # Homepage/index
+```
 
-* Just setting `remote_theme: ankitsultana/researcher@gem` in `_config.yml` should work. Although in that case, I am not sure how
-you would build your site locally for testing. If you know how, open up an issue and let me know.
-* For more info, [refer this](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/).
+### Custom design
 
-### Customization
-
-* You can edit the `.md` (markdown) files as you see fit. You can also add some other markdown file, say `foo.md` in the root directory of the repository. It will then be accessible like so `{{ url of your website }}/foo`.
-
-* You can of course remove `contact.md` if you don't want it
-
-* To set the heading, edit the `title` variable in `_config.yml`
-
-* To edit the `links` mentioned on the navigation bar, you can edit `_config.yml`. For example:
+- Add or remove `.md` files as you need. Added page `example.md` will be accessible via link `{{ site.url }}{{ site.baseurl }}/example`.
+- Use `permalink` to overwrite page address.
+- Edit `title` variable in `_config.yml` to change **top heading**.
+- Edit `nav` variable in `_config.yml` for the content of navigation bar.
 
 ```
 nav:
- - name: "About"
-   link: "/researcher/"
- - name: "Resume"
-   link: "resume.pdf"
+ - name: "Home"
+   link: "/"
+ - name: "Blog"
+   link: "/blog"
  - name: "Contact"
-   link: "contact"
+   link: "/contact"
 ```
 
-* You can change the accent (color of hyperlinks) by editing the `accent` variable in `_sass/vars.scss`
-
-* You can setup google analytics, by setting `tracking_id` in `_config.yml`
-
-* To add a profile picture, make sure to give the image tag the class `profile-picture`. In other words,do it like so:
-
-```html
-<img class="profile-picture" src="sherlock.jpg">
-```
-
-* You can remove/customize the footer as you like by setting the
-appropriate variables in `_config.yml`
-
-* (New in v1.2.0) You can add institute logo at the top, by setting `ins_logo` in `_config.yml`. If you want
-to adjust the logo's size, try setting `max-height` in `#ins-logo` in file `./_sass/_style.scss` to the desired
-value
-
-![Institute Logo Image Sample](https://github.com/ankitsultana/assets/raw/master/ins-logo-sample.png)
-
-**Note:** Customizing the accent color might cause merge conflicts if you later try to merge from `bk2dcradle/researcher` to fetch updates/patches etc. (applicable only if you have forked).
-
-### License
-
-[GNU GPL v3](https://github.com/bk2dcradle/researcher/blob/gh-pages/LICENSE)
+- Add or change global variables in `_sass/vars.scss`. This file includes basic colors for the template.
+- Create image tags with class `profile-picture` in markdown files to add profile pictures. 
+- Edit the footer content by changing `footer_text` variable in `_config.yml`.

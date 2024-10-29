@@ -1,26 +1,27 @@
 ---
 layout: default
-title: Contact | Haolong Wang
+title: "Contact | Haolong Wang"
 ---
 
 # Contact
-* Email: [foo@xyz.com](mailto:foo@xyz.com)
 
-* Phone: [+91-123123](tel:+91-123123)
+* Email: [example@abc.com](mailto:example@abc.com)
+* Phone: [+86 0123456789](tel:+86-0123456789)
 
 ---
 
-## Mailing Address
+## Address
 
-> 221B, Baker Street  
+> University College London  
+> Gower Street  
 > London  
-> 
-> United Kingdom  
+> UK  
+> WC1E 6BT  
 
 ---
 
 ## Social
 
-1. [Facebook](#)
-2. [Twitter](#)
-3. [Google+](#)
+1. [bilibili](#)
+2. [Zhihu](#)
+3. [Xiaohongshu](#)

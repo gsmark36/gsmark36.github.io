@@ -80,7 +80,7 @@ hr {
 .toc {
     display: block;
     position: fixed;
-    top: 190px;
+    top: 220px;
     right: 130px;
     width: 300px;
     padding: 10px;
@@ -152,7 +152,7 @@ hr {
 	}
     #icon {
         text-align: center;
-        margin-left: 10px;
+        margin-right: -25px; // offset = -(-10-15) = 25
         margin-bottom: 10px;
         float: none;
     }

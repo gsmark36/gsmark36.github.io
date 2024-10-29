@@ -18,8 +18,8 @@
     <div class="wrapper">
         <!-- 导航栏 -->
         <div class="navbar container">
-            <div id="icon" class="alignable pull-left" style="margin-right: 10px;">
-                <img src="{{ site.url }}/assets/plant.png" alt="icon" style="width: 90px; height: 90px; margin-top: -15px; opacity: 0.80;">
+            <div id="icon" class="alignable pull-left" style="margin-left: -15px;">
+                <img src="{{ site.url }}/assets/plant.png" alt="icon" style="width: 90px; height: 90px; margin-right: 10px; margin-top: -15px; opacity: 0.80;">
             </div>
             <a id="author-name" class="alignable pull-left" href="{{ site.url }}">
                 {{ site.title }}
@@ -39,26 +39,33 @@
             </ul>
         </div>
         <div style="clear:both"></div>
-        <hr style="height:40px; border:none;"> <!-- 分隔线 -->
+        <hr style="height:60px; border:none;"> <!-- 分隔线 -->
 
         <!-- 页面内容 -->
         <div class="container content">
             {% assign title_parts = page.title | split: '|' %}
             {% assign blog_title = title_parts | first | strip %}
             <h1>{{ blog_title }}</h1>
-            <hr style="height:5px; border:none;"> <!-- 标题正文分隔线 -->
+            <hr style="height:0px; border:none;"> <!-- 标题正文分隔线 -->
             <ul>
                 {% for post in site.posts %}
-                <li style="display: flex; align-items: flex-start; margin-bottom: 30px; margin-left: -18px;">
-                    <small style="font-size: 16px; color: #272727de; margin-right: 50px; white-space: nowrap;">{{ post.date | date: "%d %b %Y" }}</small>
-                    <a href="{{ post.url }}" style="font-size: 17px; color: #272727de; text-decoration: underline; display: block; text-align: left;">
-                        {{ post.title }}
-                    </a>
-                </li>
+                    {% assign post_year = post.date | date: "%Y" %}
+                    {% if current_year != post_year %}
+                        {% assign current_year = post_year %}
+                        <h2 style="font-weight: bold; font-size: 23px; margin-left: -18px; margin-bottom: 20px;">
+                            {{ current_year }}
+                        </h2>
+                    {% endif %}
+                    <li style="display: flex; align-items: flex-start; margin-bottom: 24px; margin-left: -18px;">
+                        <small style="font-size: 16px; color: #272727b7; margin-right: 50px; white-space: nowrap;">{{ post.date | date: "%d %b %Y" }}</small>
+                        <a href="{{ post.url }}" style="font-size: 17px; color: #272727de; text-decoration: underline; display: block; text-align: left;">
+                            {{ post.title }}
+                        </a>
+                    </li>
                 {% endfor %}
             </ul>
         </div>
-        <hr style="height:40px; border:none;">
+        <hr style="height:60px; border:none;">
 
         <!-- 页脚 -->
         {% if site.footer == true %}

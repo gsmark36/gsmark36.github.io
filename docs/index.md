@@ -1,24 +1,23 @@
 ---
 layout: default
-title: Home | Haolong Wang
+title: "Home | Haolong Wang"
 ---
 
-# About Me
+# Homepage | About Me
 
-<!--<img class="profile-picture" src="{{ site.url }}/assets/sherlock.jpg">-->
+<img class="profile-picture" src="{{ site.url }}/assets/panda-head.png" style="opacity: 0.80;">
 
-Hi! I am a junior year student of B.E. Computer Science at Birla Institute of Technology and Science, Pilani.
+Hi! I am a graduate student at Computer Lab, University of Cambridge. 
 
-This is a jekyll based resume template. You can find the full source code on [GitHub](https://github.com/bk2dcradle/researcher)
+This is a jekyll theme template based personal website template based on **Researcher** and **Cactus**. You can find them on GitHub. 
+
+- [Researcher](https://github.com/bk2dcradle/researcher)  
+- [Cactus](https://github.com/chrismwilliams/astro-theme-cactus)  
 
 ## Research Interest
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
-
-## Publications
-
-1. F.Bar, J.Doe: Effects of having a placeholder of a name
-2. S.Holmes, J.Watson: Consequences of living with a sociopath in London
+N/A  
+Template content to be added.  
 
 ## Typography
 
@@ -38,11 +37,11 @@ Here is a horizontal rule
 
 Here is a blockquote
 
-> To a great mind. Do you remember everything happened in the past years. You never know the top till you get so low.Nothing is true, everything is permitted.   
+> Do you remember everything happened in the past? You never know the result till you witness the end. Nothing is true, everything is permitted.   
 > Get ready now.  
-> by somebody  
+> by nobody  
 
 ## References
 
-* Foo Bar: Head of Department, Placeholder Names, Lorem
-* John Doe: Associate Professor, Department of Computer Science, Ipsum
+* Example 1: Head of Department, Placeholder Names, Somewhere
+* Example 2: Role, Department of Something, Somewhere
