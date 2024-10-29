@@ -21,7 +21,9 @@ sass:
 nav:
  - name: "Home"
    link: "/"
+ - name: "Research"
+   link: "/research"
+ - name: "Publication"
+   link: "/publication"
  - name: "Blog"
    link: "/blog"
- - name: "Contact"
-   link: "/contact"
