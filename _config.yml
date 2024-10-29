@@ -1,0 +1,27 @@
+title: Haolong Wang
+#url: "https://gsmark36.github.io"
+#baseurl: "/"
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  toc_levels: 1..6
+  auto_ids: true
+
+footer: yes
+footer_text: "@ Haolong Wang | Jekyll & GitHub Pages"
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+nav:
+ - name: "Home"
+   link: "/"
+ - name: "Blog"
+   link: "/blog"
+ - name: "Contact"
+   link: "/contact"

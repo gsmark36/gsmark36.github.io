@@ -1,0 +1,165 @@
+@import "vars";
+@import "typography";
+@import "tables";
+
+// Basic
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $background;
+    font-family: "Ubuntu Mono";
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: $accent;
+}
+a:hover {
+    text-decoration: underline;
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #acacacb0;//rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+// Navbar
+
+#author-name {
+    //font-weight: bold;
+    font-size: 32px;
+    color: $text-color;
+    display: inline-block;
+}
+.navbar {
+    padding: 50px 0 50px 0;
+}
+.navbar-ul {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    margin-left: 20px;
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0 5px 0 10px;
+}
+.alignable {
+    display: inline-block;
+}
+.pull-left {
+    @extend .alignable;
+    float: left;
+}
+.pull-right {
+    @extend .alignable;
+    float: right;
+}
+#navlist {
+    font-size: 18px;
+}
+
+// Divs
+
+.container {
+    max-width: $max-width;
+    margin: auto;
+}
+.wrapper {
+    min-height: 100%;
+}
+
+// TOC
+
+.toc {
+    display: block;
+    position: fixed;
+    top: 220px;
+    right: 130px;
+    width: 300px;
+    padding: 10px;
+}
+.toc-item {
+    margin-bottom: 5px;
+    margin-left: 0;
+    font-size: 16px;
+}
+.toc-level-2 {
+    margin-left: 9px;
+    font-size: 16px;
+}
+.toc-level-3 {
+    margin-left: 18px;
+    font-size: 16px;
+}
+.toc ul {
+    list-style-type: "# ";
+    padding: 0;
+    color: $text-color;
+    margin-left: 25px;
+}
+
+// Mobile
+
+@media (max-width: 800px) {
+    .container {
+        max-width: $med-width;
+        transition: 0.3s ease all;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 83%;
+    }
+    .navbar-ul {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+	.navbar {
+		text-align: center;
+		padding: 50px 0px 0px 0px;
+	}
+	#author-name {
+        text-align: center;
+		width: 100%;
+		float: none;
+	}
+	#navlist {
+		padding: 10px 0 10px 0;
+		margin: 0;
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	#navlist li.alignable {
+		display: inline-block;
+	}
+	#navlist li.pull-left {
+		float: none;
+	}
+	#navlist li.nav-list {
+		margin: 0;
+	}
+    #icon {
+        text-align: center;
+        margin-right: -25px; // offset = -(-10-15) = 25
+        margin-bottom: 10px;
+        float: none;
+    }
+}
+
+@media (max-width: 1600px) {
+    .toc {
+        display: none;
+    }
+}
