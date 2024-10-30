@@ -18,8 +18,8 @@
     <div class="wrapper">
         <!-- 导航栏 -->
         <div class="navbar container">
-            <div id="icon" class="alignable pull-left" style="margin-left: -15px;">
-                <img src="{{ site.url }}/assets/plant.png" alt="icon" style="width: 90px; height: 90px; margin-right: 10px; margin-top: -15px; opacity: 0.80;">
+            <div id="icon" class="alignable pull-left" style="margin-left: -10px;">
+                <img src="{{ site.url }}/assets/3d.png" alt="icon" style="width: 90px; height: 90px; margin-right: 10px; margin-top: -15px; opacity: 0.80;">
             </div>
             <a id="author-name" class="alignable pull-left" href="{{ site.url }}">
                 {{ site.title }}
@@ -32,20 +32,20 @@
                         <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
                     {% endif %}
                     {% if forloop.last == false %}
-                        <span style="color: #272727e7;">/</span> <!-- 分隔符 -->
+                        <span style="color: #272727e7;">|</span> <!-- 分隔符 -->
                     {% endif %}
                         </li>
                 {% endfor %}
             </ul>
         </div>
         <div style="clear:both"></div>
-        <hr style="height:60px; border:none;"> <!-- 分隔线 -->
+        <hr style="height:40px; border:none;"> <!-- 分隔线 -->
 
         <!-- 页面内容 -->
         <div class="container content">
             {{ content }}
         </div>
-        <hr style="height:60px; border:none;">
+        <hr style="height:50px; border:none;">
 
         <!-- 页脚 -->
         {% if site.footer == true %}
