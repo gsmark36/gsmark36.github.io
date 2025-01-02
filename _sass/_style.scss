@@ -4,16 +4,34 @@
 
 // Basic
 
-html {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
 body {
-    background-color: $background;
     font-family: "Ubuntu Mono";
     font-weight: 400;
+    background-image: url("/assets/bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $background;
+    z-index: -1; /* 背景层在内容之下 */
+}
+body > * {
+    position: relative;
+    z-index: 1; /* 文本层在伪元素上方 */
 }
 a {
     text-decoration: none;
